@@ -242,16 +242,3 @@ Figure out the opening
 
 
 ... just like writing a journal article 
-
-
-
-
-
-
-
-
-
-
- 
-
-
