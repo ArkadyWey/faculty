@@ -39,7 +39,6 @@ Bad
 ## The programmes
 
 ### Data science
-;
 
 ### Machine learning exngineer
 
@@ -162,3 +161,5 @@ Bad
 
 ### Act 
 - Which strategy do you prefer?
+
+Testing
