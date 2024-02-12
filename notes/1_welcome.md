@@ -161,6 +161,3 @@ Bad
 
 ### Act 
 - Which strategy do you prefer?
-
-Testing
-Testing
