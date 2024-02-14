@@ -203,5 +203,56 @@ Uniform Manifold Approximation and Projection
 START WITH UMAP AND HDBSCAN
 
 
+## 3. SQL - Structured Query Language 
+Mat Escobar 
+
+- SQL is third most used language 
+- It is used more than Python 
+
+Relational database 
+- Databases that consist of tables tha consist of data that are related in some way 
+
+### ACID Properties 
+- Atomic : Everything in the transation success or the whole thnig fails 
+- Consistent : Transaction cannot leave database withouto abidinig by rules 
+- Isolated : Transactions cannot interfere with each other 
+- Durable : Completed transactions persists even when server restarts 
+ 
+### Databases 
+- Each table has a primary key : basically an index for the row 
+- Some tables have a foreign key : basically mapping to primary key in a different table. 
+
+### Relational model  
+- One-to-one : Table is 2 column, primary key and one piece of data 
+- One to many : Each primary key has many data poitns associaed with it. i.e. more than two columns. 
+- Many to many 
+
+### SQL 
+- This is a language 
+- We can use it to create tables / get info from tables / add to tables 
+
+- Definition : structuring a new table 
+- Querying : getting info from tables  
+- Manipulation : ....
+
+- SQL is not case sensitive 
+- SQL does not care about indentation / new lines
+
+- select <colum name or name,name> from <table>
+
+Convention 
+- Statement in UPPERCASE 
+- New line for new statement 
+- New line after comma with indent 
+- Although SQL doesn't care but we should  
+
+- SELECT <column> FROM <table> WHERE <column-name>='data-point' 
+
+## 4. Saying NO!
+
+
+
+
+
 
 
