@@ -127,4 +127,81 @@ Hierarchical Density Based Spatial Clusterning of Applications with Noise
 - Might not need to do it - can we use semi-supervised methods?
 
 ### Dimensionality reduction 
+- We would like to get the data to a number of dimensions that we can visualise  
+- We should think of dimensionality reduction as a method of projecting onto a lower dimensional space. 
+
+
+Why is it needed?
+- Features arae highly correlated so don't need them all 
+- Manual feature slection is often very difficult : i.e. picking out wjhich features are similar to other features 
+- Clusterning is hard in higih dimensiional space
+
+Curse of dimensionalaity
+- In 1-D, let's say data occupies 1/10th of space. Then in d-D, data occupies (1/10)^d of space. 
+
+Applications 
+- Feature selection : get optimal subset of features
+- Feature extraction : project whole data set into lower dimensional space 
+- Visualisation : Want to be able to show client 
+- Increasing speed : In other algorithms we want to use
+
+### Linear dimensionality reduction - PCA (Principal Component Analysis)
+
+- Choose another basis for thee data space
+- Find orthogonal axes of higheest variance via an eigenvalue decomposition
+- I.e. find the eigenvector directions that have the largest eigenvalues
+
+How many principle components to retain?
+- Plot variance retained vs number of dimensions 
+- Our aim is to decrease dimensions as much as possible without losing too much variance 
+- We usually want to decrease to two or three dimensions for visualisation, for example, to spot a linear relationship. 
+
+Example 
+- MNIST data set 
+- Forget the lable and use dimension reduction 
+- Starts with with dimension 28*28=784 dimensional image so space is 784 pixel brightnesses to choose so this is the dimenension of the space
+- We use PCA to reduce this number to two and we observe points that are loosely cliustered based on their number. 
+- We then give this to k means that clusters but these clusters don't really correspond to numbers 
+
+### Non-linear dimensionality reductions
+
+#### SNE and t-SNE 
+Stochastic neighbourhood embedding and t-distributed stochastic neighbourhood embedding 
+
+- On the higher dimensional space, construct conditional distributionon one point givien another point.  
+- One the lower dimensional space, construct another distriibution on a random set of points. 
+In t-*, we use the t-student distribution. 
+- Move the lower dimensional doistribution to optimise the Kullbacl-LEibler function via gradient descent.  
+
+### UMAP 
+Uniform Manifold Approximation and Projection 
+
+- 'The most mathematically complicated idea in machine learning' 
+- See the readthedocs on the algorithm. 
+- Amazing algorithm - read about it.
+
+### Autoencoders 
+
+- Can we compress our data to a subset where we haven't lost much information?
+- We use a funnel shaped neural network to encode and opposite shaped funnel to decode 
+- We train the encoder and decoder to make the input and output the same. 
+- So the network is forced to learn how to compress data because the less lossy we can make the compression teh better we can construct the data on the other side. 
+- If you check away the decoder, the encoder gives a method for taking ahigh dimiensional vector and spitting out a low dimensional vector.
+
+- When activiation functions are linear, optimal encoding is just PCA 
+
+### Summary 
+
+#### Clustering 
+- Find struvture ini unlabelled data 
+- Understand what clusters are 
+
+#### Dimensionality reduction 
+- Visualisiation 
+- Tradeoff between linear and non-linear 
+
+START WITH UMAP AND HDBSCAN
+
+
+
 
